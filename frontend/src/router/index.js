@@ -1,7 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Create from '../components/AddProduct.vue'
 import Edit from '../components/EditProduct.vue'
-import Index from '../components/ProductList.vue'
+import ProductList from '../components/ProductList.vue'
+import Home from '../views/Home.vue'
 
  
 const routes = [
@@ -16,9 +17,14 @@ const routes = [
     component: Edit
   },
   {
-    name: 'Index',
+    name: 'Home',
     path: '/',
-    component: Index
+    component: Home
+  },
+  {
+    name: 'List',
+    path: '/list',
+    component: ProductList
   },
 ];
 

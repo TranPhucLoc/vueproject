@@ -1,7 +1,12 @@
 <template>
-    <div>
+    <div id="container">
+      <div id="list">
       <router-link :to="{ name: 'Create' }" class="button is-success mt-5"
         >Add New</router-link
+      >
+      &nbsp;
+      <router-link :to="{ name: 'Home' }" class="button is-success mt-5"
+        >HomePage</router-link
       >
       <table class="table is-striped is-bordered mt-2 is-fullwidth">
         <thead>
@@ -30,6 +35,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
     </div>
   </template>
    
@@ -75,4 +81,14 @@
   </script>
    
   <style>
+    #container {
+        background-image: url(../assets/manage.png);
+        height: 600px;
+        width: 100%;
+        
+    }
+    #list {
+        width: 80%;
+        
+    }
   </style>

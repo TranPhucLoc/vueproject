@@ -52,7 +52,7 @@
           });
           this.productName = "";
           this.productPrice = "";
-          this.$router.push("/");
+          this.$router.push("/List");
         } catch (err) {
           console.log(err);
         }
