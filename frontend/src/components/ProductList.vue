@@ -62,6 +62,7 @@
    
       // Delete Product
       async deleteProduct(id) {
+        if(confirm('are you sure you want to delete?'))
         try {
           await axios.delete(`http://localhost:5000/products/${id}`);
           this.getProducts();
